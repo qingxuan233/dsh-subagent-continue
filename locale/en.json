@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Subagent continuation",
+    "description": "Continues a failed or stopped subagent inside its own session instead of starting a new one. Adds the subagent_status and subagent_continue tools, and bounds automatic continuations of failed direct children (two by default) so the delegating agent learns when the budget is spent."
+  }
+}

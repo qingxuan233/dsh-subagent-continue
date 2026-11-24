@@ -1,0 +1,11 @@
+# Subagent continuation bundle: one Host row owning the model-facing
+# subagent_status and subagent_continue tools plus the bounded automatic
+# continuation.
+#
+# `inject` is declared here as well as in the module because the Loader merges
+# this row's inject list into the plugin fiber (cordis-plugin-loader
+# `internal/plugin`), which is what authorizes `ctx.tools` and the others.
+- insert:
+    - id: subagent-continue
+      name: 'dsh-subagent-continue'
+      inject: [tools, systemPrompt, subagents, agents]

@@ -1,0 +1,50 @@
+{
+  "name": "dsh-subagent-continue",
+  "version": "1.0.0",
+  "description": "Continue failed subagents inside their own session instead of starting a new one: subagent_status and subagent_continue tools plus bounded automatic continuations.",
+  "license": "MIT",
+  "author": "liwenzhi <695598532@qq.com>",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-bundle",
+    "deepseek-harness",
+    "subagent",
+    "agent-orchestration"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.2-rc.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qingxuan233/dsh-subagent-continue.git"
+  },
+  "homepage": "https://github.com/qingxuan233/dsh-subagent-continue#readme",
+  "bugs": {
+    "url": "https://github.com/qingxuan233/dsh-subagent-continue/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
